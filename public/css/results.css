@@ -1,0 +1,49 @@
+@media (min-width: 600px) {
+    .songs-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+.link {
+    background-color: white;
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.link:hover {
+    background-color: rgb(255, 238, 168);
+}
+
+.title, .composer, .arranger, .parts {
+    margin: 0;
+    width: 80%;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+.composer {
+    font-style: italic;
+    font-weight: 1000;
+}
+
+.arranger {
+    font-style: italic;
+    font-weight: 100;
+}
+
+.parts {
+    font-weight: 100;
+}
+
+hr {
+    border-style: solid;
+    margin: 0;
+    padding: 0;
+}

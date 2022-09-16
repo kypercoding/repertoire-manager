@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Results</title>
+        <link rel="stylesheet" href="css/general.css"/>
+        <link rel="stylesheet" href="css/results.css"/>
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <div id="navbar">
+            <ul>
+                <li><a href="/search">Search</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </div>
+        <div class="heading-container">
+            <h1>Search Results</h1>
+            <h2>Number of Results Found: <%= count %></h2>
+        </div>
+        <div class="songs-container">
+        <% items.forEach(function(item, index){ %>
+            <a class="link" href="<%= item['link'] %>" target="_blank">
+                <h2 class="title"><%= item['title'] %></h2>
+                <h3 class="composer"><%= item['composer'] %></h3>
+                <h3 class="arranger"><%= item['arranger'] %></h3>
+                <p class="parts"><%= item['parts'] %></p>
+            </a>
+        <% }) %>
+        </div>
+    </body>
+</html>

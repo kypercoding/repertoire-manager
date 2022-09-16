@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="css/general.css"/>
+        <link rel="stylesheet" href="css/search.css"/>
+        <meta name="viewport" content="width=device-width">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="navbar">
+            <ul>
+                <li><a href="/search">Search</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </div>
+        <div class="heading-container">
+            <h1>Search</h1>
+        </div>
+        <div class="form-container">
+            <form action="/find" method="POST">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" name="title" placeholder="Title">
+                        </td>
+                    <tr>
+                        <td>
+                            <select name="is_ks">
+                                <option value="">All Arrangements</option>
+                                <option value="">KS Arrangements Only</option>
+                                <option value="">Non-KS Arrangements Only</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="submit-button" type="submit" value="Submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

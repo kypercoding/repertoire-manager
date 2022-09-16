@@ -1,0 +1,44 @@
+.form-container {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    padding: 1em;
+    background-color: #3641a7;
+}
+
+.form-container table {
+    margin: auto;
+    padding: 1em;
+    width: 100%;
+}
+
+.form-container table td {
+    padding: 1em;
+    width: 50%;
+}
+
+.form-container input {
+    font-family: "Garamond", "Times New Roman", serif;
+    border-style: none;
+    padding: 1em;
+    width: 80%;
+    font-size: 1em;
+}
+
+.form-container input:focus {
+    outline-style: none;
+}
+
+.form-container select {
+    width: 80%;
+    font-family: "Garamond", "Times New Roman", serif;
+    padding: 1em;
+}
+
+#submit-button {
+    background-color: white;
+}
+
+#submit-button:hover {
+    background-color: #fff7ae;
+}

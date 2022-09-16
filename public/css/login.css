@@ -1,0 +1,27 @@
+.form-container {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    padding: 1em;
+    background-color: #3641a7;
+}
+
+.form-container input {
+    font-family: "Garamond", "Times New Roman", serif;
+    border-style: none;
+    margin: 20px;
+    padding: 1em;
+    width: 80%;
+}
+
+.form-container input:focus {
+    outline-style: none;
+}
+
+#submit-button {
+    background-color: white;
+}
+
+#submit-button:hover {
+    background-color: #fff7ae;
+}
